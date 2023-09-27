@@ -1,0 +1,9 @@
+<h1>Payment Results</h1>
+<h3> APR:</h3>
+<p><%=@formatted_apr%>%</p>
+<h3> Number of Years:</h3>
+ <%=@num_of_years %>
+<h3> Principal:</h3>
+<p><%= @principal.to_f.to_fs(:currency) %></p>
+<h3> Monthly Payment:</h3>
+<p> <%= @monthly_payment.to_f.to_fs(:currency)%></p>
